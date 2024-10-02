@@ -1,0 +1,87 @@
+﻿/* General Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+}
+
+.card-body {
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    padding: 20px;
+}
+
+/* Chat Box Styles */
+.chat-box {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.bot-message {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Input Styles */
+.input-group {
+    position: sticky;
+    bottom: 0;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    border-radius: 0 0 0 10px;
+    border: 1px solid #007bff;
+}
+
+button {
+    border-radius: 0 0 10px 0;
+}
+
+/* Scrollbar Styles */
+.chat-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+    background-color: #e9ecef;
+}

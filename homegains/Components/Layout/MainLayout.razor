@@ -1,0 +1,71 @@
+﻿@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
+
+<div class="page">
+    <div class="">
+        <NavMenu />
+    </div>
+
+    <main>
+
+        @if (isTrue == true )
+        {
+            <article class="content px-4 mt-5" style="background: url(image/workout4.jpg); background-position: right; background-repeat:no-repeat;background-size:cover; height:619px;">
+                @Body
+            </article>
+        }
+        else{
+            <article class="content px-4 mt-5">
+                @Body
+            </article>
+        }
+
+    </main>
+    <Footer></Footer>
+</div>
+
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>
+
+@code{
+    private string PageNa;
+    private bool isTrue = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        GetCurrentPageName();
+    }
+
+
+    private void GetCurrentPageName()
+    {
+        string url = NavigationManager.Uri;
+        // Extract page name from URL, you can use string manipulation, regex, or any other method
+        // For example, you can extract the page name from the URL "/example" as "example"
+        string[] segments = url.Split('/');
+        string pageName = segments.Last();
+        PageNa = pageName;
+        try
+        {
+            PageNa = PageNa.Substring(0, 5);
+            if (PageNa == "Login" || PageNa == "Regis")
+            {
+                isTrue = true;
+            }
+            else
+            {
+                isTrue = false;
+                /*addStyleWithImage = "";
+                styleHeight = "";*/
+            }
+        }
+        catch (Exception ex)
+        {
+
+        }
+
+    }
+}

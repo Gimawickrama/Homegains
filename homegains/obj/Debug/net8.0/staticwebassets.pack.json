@@ -1,0 +1,305 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\homegains.bundle.scp.css",
+      "PackagePath": "staticwebassets\\homegains.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\contact us.jpg",
+      "PackagePath": "staticwebassets\\Image\\contact us.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\diet1.jpg",
+      "PackagePath": "staticwebassets\\Image\\diet1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\diet2.jpg",
+      "PackagePath": "staticwebassets\\Image\\diet2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\diet3.jpg",
+      "PackagePath": "staticwebassets\\Image\\diet3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\diet4.jpg",
+      "PackagePath": "staticwebassets\\Image\\diet4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\diet5.jpg",
+      "PackagePath": "staticwebassets\\Image\\diet5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\low-angle-view-unrecognizable-muscular-build-man-preparing-lifting-barbell-health-club.jpg",
+      "PackagePath": "staticwebassets\\Image\\low-angle-view-unrecognizable-muscular-build-man-preparing-lifting-barbell-health-club.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\mission 02.jpg",
+      "PackagePath": "staticwebassets\\Image\\mission 02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\misson.jpg",
+      "PackagePath": "staticwebassets\\Image\\misson.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\water.jpg",
+      "PackagePath": "staticwebassets\\Image\\water.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\workout.jpg",
+      "PackagePath": "staticwebassets\\Image\\workout.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\workout1.jpg",
+      "PackagePath": "staticwebassets\\Image\\workout1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\workout2.jpg",
+      "PackagePath": "staticwebassets\\Image\\workout2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\workout3.jpg",
+      "PackagePath": "staticwebassets\\Image\\workout3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\workout4.jpg",
+      "PackagePath": "staticwebassets\\Image\\workout4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\workout5.jpg",
+      "PackagePath": "staticwebassets\\Image\\workout5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\workout6.jpg",
+      "PackagePath": "staticwebassets\\Image\\workout6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\yoga.jpg",
+      "PackagePath": "staticwebassets\\Image\\yoga.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\yoga1.jpg",
+      "PackagePath": "staticwebassets\\Image\\yoga1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\yoga2.jpg",
+      "PackagePath": "staticwebassets\\Image\\yoga2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\yoga3.jpg",
+      "PackagePath": "staticwebassets\\Image\\yoga3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\yoga4.jpg",
+      "PackagePath": "staticwebassets\\Image\\yoga4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\zumba.jpg",
+      "PackagePath": "staticwebassets\\Image\\zumba.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Image\\zumba1.jpg",
+      "PackagePath": "staticwebassets\\Image\\zumba1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\Js\\echarts.min.js",
+      "PackagePath": "staticwebassets\\Js\\echarts.min.js"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\BackGrounds\\3d-gym-equipment.jpg",
+      "PackagePath": "staticwebassets\\assets\\BackGrounds\\3d-gym-equipment.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\Icons\\security.svg",
+      "PackagePath": "staticwebassets\\assets\\Icons\\security.svg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\Other\\close-up-man-doing-yoga-indoors.jpg",
+      "PackagePath": "staticwebassets\\assets\\Other\\close-up-man-doing-yoga-indoors.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\Other\\methodical-weight-training-builds-muscular-healthy-men-generated-by-ai.jpg",
+      "PackagePath": "staticwebassets\\assets\\Other\\methodical-weight-training-builds-muscular-healthy-men-generated-by-ai.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\Other\\portrait-handsome-man.jpg",
+      "PackagePath": "staticwebassets\\assets\\Other\\portrait-handsome-man.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\Other\\sportive-man.jpg",
+      "PackagePath": "staticwebassets\\assets\\Other\\sportive-man.jpg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\SportIcons\\fit-boxing.svg",
+      "PackagePath": "staticwebassets\\assets\\SportIcons\\fit-boxing.svg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\SportIcons\\fit-cycling.svg",
+      "PackagePath": "staticwebassets\\assets\\SportIcons\\fit-cycling.svg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\SportIcons\\fit-dumbell.svg",
+      "PackagePath": "staticwebassets\\assets\\SportIcons\\fit-dumbell.svg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\SportIcons\\fit-massage.svg",
+      "PackagePath": "staticwebassets\\assets\\SportIcons\\fit-massage.svg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\SportIcons\\fit-swimming.svg",
+      "PackagePath": "staticwebassets\\assets\\SportIcons\\fit-swimming.svg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\SportIcons\\fit-yoga.svg",
+      "PackagePath": "staticwebassets\\assets\\SportIcons\\fit-yoga.svg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\WebSiteLogo\\myLogo.svg",
+      "PackagePath": "staticwebassets\\assets\\WebSiteLogo\\myLogo.svg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\WebSiteLogo\\myLogo1.svg",
+      "PackagePath": "staticwebassets\\assets\\WebSiteLogo\\myLogo1.svg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\css\\animate.css",
+      "PackagePath": "staticwebassets\\assets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\css\\icomoon.css",
+      "PackagePath": "staticwebassets\\assets\\css\\icomoon.css"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\assets\\css\\superfish.css",
+      "PackagePath": "staticwebassets\\assets\\css\\superfish.css"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\music\\music01.mp3",
+      "PackagePath": "staticwebassets\\music\\music01.mp3"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\music\\music02.mp3",
+      "PackagePath": "staticwebassets\\music\\music02.mp3"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\myLogo1.svg",
+      "PackagePath": "staticwebassets\\myLogo1.svg"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\video\\yoga v01.mp4",
+      "PackagePath": "staticwebassets\\video\\yoga v01.mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\video\\zumba1.mp4",
+      "PackagePath": "staticwebassets\\video\\zumba1.mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\video\\zumba2.mp4",
+      "PackagePath": "staticwebassets\\video\\zumba2.mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\video\\zumba3.mp4",
+      "PackagePath": "staticwebassets\\video\\zumba3.mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\videos\\Abdominal Crunches .mp4",
+      "PackagePath": "staticwebassets\\videos\\Abdominal Crunches .mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\videos\\Box Push Ups .mp4",
+      "PackagePath": "staticwebassets\\videos\\Box Push Ups .mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\videos\\Bycycle Crunches.mp4",
+      "PackagePath": "staticwebassets\\videos\\Bycycle Crunches.mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\videos\\Crunch Kicks.mp4",
+      "PackagePath": "staticwebassets\\videos\\Crunch Kicks.mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\videos\\Step-Ups.mp4",
+      "PackagePath": "staticwebassets\\videos\\Step-Ups.mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\videos\\V Crunch.mp4",
+      "PackagePath": "staticwebassets\\videos\\V Crunch.mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\videos\\bird dog.mp4",
+      "PackagePath": "staticwebassets\\videos\\bird dog.mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\videos\\bridge.mp4",
+      "PackagePath": "staticwebassets\\videos\\bridge.mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\videos\\burpees.mp4",
+      "PackagePath": "staticwebassets\\videos\\burpees.mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\videos\\cobra stretch.mp4",
+      "PackagePath": "staticwebassets\\videos\\cobra stretch.mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\videos\\curtsy Lunges.mp4",
+      "PackagePath": "staticwebassets\\videos\\curtsy Lunges.mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\videos\\jumping jack.mp4",
+      "PackagePath": "staticwebassets\\videos\\jumping jack.mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\videos\\leg in out.mp4",
+      "PackagePath": "staticwebassets\\videos\\leg in out.mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\videos\\lunges.mp4",
+      "PackagePath": "staticwebassets\\videos\\lunges.mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\videos\\mountain climber.mp4",
+      "PackagePath": "staticwebassets\\videos\\mountain climber.mp4"
+    },
+    {
+      "Id": "C:\\Users\\supun\\source\\repos\\homegains (1)\\homegains\\homegains\\wwwroot\\videos\\squats.mp4",
+      "PackagePath": "staticwebassets\\videos\\squats.mp4"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.homegains.props",
+      "PackagePath": "build\\homegains.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.homegains.props",
+      "PackagePath": "buildMultiTargeting\\homegains.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.homegains.props",
+      "PackagePath": "buildTransitive\\homegains.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.homegains.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

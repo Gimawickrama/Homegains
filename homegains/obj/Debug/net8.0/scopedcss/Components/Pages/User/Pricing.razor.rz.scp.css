@@ -1,0 +1,99 @@
+/* General container and text styling */
+.container[b-cy2hrduj8y] {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+h2[b-cy2hrduj8y] {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #343a40;
+}
+
+p[b-cy2hrduj8y] {
+    font-size: 1.125rem;
+    color: #6c757d;
+}
+
+a.btn[b-cy2hrduj8y] {
+    padding: 0.75rem 1.25rem;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* Card styles */
+.card[b-cy2hrduj8y] {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.2s ease-in-out;
+}
+
+    .card:hover[b-cy2hrduj8y] {
+        transform: scale(1.05);
+    }
+
+.card-body[b-cy2hrduj8y] {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border: 1px solid #e9ecef;
+}
+
+.card-title[b-cy2hrduj8y] {
+    font-size: 3rem;
+    color: #007bff;
+}
+
+.card-subtitle[b-cy2hrduj8y] {
+    font-size: 1.25rem;
+    color: #495057;
+}
+
+/* Badge styles */
+.badge[b-cy2hrduj8y] {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.1rem;
+}
+
+/* List styles */
+.list-unstyled[b-cy2hrduj8y] {
+    padding-left: 0;
+}
+
+    .list-unstyled li[b-cy2hrduj8y] {
+        font-size: 1rem;
+        color: #495057;
+    }
+
+.bs-icon[b-cy2hrduj8y] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+/* Specific pricing plan styles */
+.card.border-primary[b-cy2hrduj8y] {
+    border-color: #007bff;
+}
+
+    .card.border-primary .btn[b-cy2hrduj8y] {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+.btn-light[b-cy2hrduj8y] {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border: 1px solid #e9ecef;
+}
+
+.btn-dark[b-cy2hrduj8y] {
+    background-color: #343a40;
+    color: #fff;
+    border: 1px solid #343a40;
+}

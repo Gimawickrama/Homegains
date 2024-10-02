@@ -1,0 +1,29 @@
+﻿.card {
+    transition: transform 0.3s;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    .card:hover {
+        transform: scale(1.02);
+    }
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-top: auto;
+}

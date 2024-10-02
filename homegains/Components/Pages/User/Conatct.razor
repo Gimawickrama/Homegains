@@ -1,0 +1,88 @@
+﻿@page "/User/View/Conatct"
+@using System.Net
+@using System.Net.Mail
+@using System.Text
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
+
+
+
+<div id="fh5co-contact">
+	<div class="container">
+		<form action="#">
+			<div class="row">
+				<div class="col-md-6 animate-box">
+					<h3 class="section-title">Contact Us</h3>
+					<p>Need to get in touch with us? Either fill out the form with your inquiry or use the contact information below:</p>
+
+					<!-- Contact Details -->
+                   <h2 class="section-title">Meet Us</h2>
+					<ul class="contact-details">
+						<li><strong>Name :</strong>Dilith Karunarathna</li>
+						<li><strong>Email:</strong> dilitht123@gmail.com</li>
+						<li><strong>Phone:</strong> 0776957764</li>
+						<li><strong>Address:</strong> 23,A Vijaya Mawatha , Minuwangoda. SriLanka</li>
+					</ul>
+				</div>
+
+				<div class="col-md-6 animate-box">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Name" @bind-value="@ToName">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Email" @bind-value="@ToEmailSend">
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message" ></textarea>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<button class="btn btn-primary" type="button" @onclick="@sendEmailMessageInvoice">Send Message</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+@code {
+	NetworkCredential login;
+	SmtpClient client;
+	MailMessage msg;
+
+	private string username = "gimhanikawi123";
+	private string Password = "poyl whix udne ntoe";
+	private string SMTP = "smtp.gmail.com";
+	private string Port = "25";
+	private string ToEmailSend { get; set; }  
+	private string ToName { get; set; }
+	
+
+	private void sendEmailMessageInvoice()
+	{
+		login = new NetworkCredential(username, Password);
+		client = new SmtpClient(SMTP);
+		client.Port = Convert.ToInt32(Port);
+		client.EnableSsl = true;
+		client.Credentials = login;
+		msg = new MailMessage { From = new MailAddress(username + SMTP.Replace("smtp.", "@"), "Gimhani", Encoding.UTF8) };
+		msg.To.Add(new MailAddress(ToEmailSend));
+		msg.Subject = "HomeGains  Details Send For Clients";
+		msg.Body = "Hello I'm Gim";
+		msg.BodyEncoding = Encoding.UTF8;
+		msg.IsBodyHtml = true;
+		msg.Priority = MailPriority.Normal;
+		msg.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
+		string userstate = "Sending...";
+		client.SendAsync(msg, userstate);
+	}
+
+}

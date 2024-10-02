@@ -1,0 +1,287 @@
+﻿/* Basic reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero section styling */
+.fh5co-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.fh5co-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.fh5co-cover {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: left;
+}
+
+    .fh5co-cover[data-stellar-background-ratio="0.5"] {
+        background-attachment: fixed;
+    }
+
+    .fh5co-cover h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .fh5co-cover p {
+        font-size: 1.25rem;
+    }
+
+    /* Background image styling */
+    .fh5co-cover[style*="background:url('image/yoga.jpg')"] {
+        background: url('image/yoga.jpg') no-repeat center center/cover;
+    }
+
+    .fh5co-cover[style*="background:url('image/yoga3.jpg')"] {
+        background: url('image/yoga3.jpg') no-repeat center center/cover;
+    }
+    .fh5co-cover[style*="background:url('image/yoga4.jpg')"] {
+        background: url('image/yoga.jpg') no-repeat center center/cover;
+        filter: blur(1px);
+    }
+
+/* Text alignment */
+.desc {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width:550px;
+}
+
+.justify-content-center {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+    .justify-content-center + p {
+        font-size: 1.25rem;
+        margin-top: 0.5rem;
+        font-style: italic;
+    }
+
+/* Container and row styling */
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-7 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Card styling */
+.card {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.card-header {
+    background: #f5f5f5;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.25rem;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+    .card-body audio {
+        width: 100%;
+    }
+
+/* Audio player styling */
+audio {
+    width:900  /* Basic reset and styling */
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero section styling */
+.fh5co-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.fh5co-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.fh5co-cover {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: left;
+}
+
+.fh5co-cover[data-stellar-background-ratio="0.5"] {
+    background-attachment: fixed;
+}
+
+.fh5co-cover h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.fh5co-cover p {
+    font-size: 1.25rem;
+}
+
+/* Background image styling */
+.fh5co-cover[style*="background:url('image/yoga.jpg')"] {
+    background: url('image/yoga.jpg') no-repeat center center/cover;
+}
+
+.fh5co-cover[style*="background:url('image/yoga3.jpg')"] {
+    background: url('image/yoga3.jpg') no-repeat center center/cover;
+}
+
+/* Text alignment */
+.desc {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.justify-content-center {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.justify-content-center + p {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Container and row styling */
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-7 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Card styling */
+.card {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.card-header {
+    background: #f5f5f5;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.25rem;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-body audio {
+    width: 100%;
+}
+
+/* Audio player styling */
+audio {
+    width: 900%;
+    outline: none;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .col-md-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .fh5co-cover h2 {
+        font-size: 2rem;
+    }
+
+    .fh5co-cover p {
+        font-size: 1rem;
+    }
+}
+%;
+    outline: none;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .col-md-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .fh5co-cover h2 {
+        font-size: 2rem;
+    }
+
+    .fh5co-cover p {
+        font-size: 1rem;
+    }
+}

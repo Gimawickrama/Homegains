@@ -1,0 +1,190 @@
+﻿@implements IDisposable
+
+@inject NavigationManager NavigationManager
+
+<div class="top-row ps-1 navbar navbar-light fixed-top">
+    <div class="container-fluid">
+        <div class="row-fixed">
+            <div class="nav-link">
+                <div class="d-flex justify-content-center align-items-center align-self-center">
+                    <div class="">
+                        <img src="assets/websitelogo/mylogo.svg" class="img-fluid" style="width:45px; margin-top:-10px;" alt="Alternate Text" />
+                    </div>
+                    <div>
+                        <a class="navbar-brand" href="home"><span class="text-danger">Home</span>Gains</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="row-fixed hidden-sec">
+                
+                <AuthorizeView Roles="Admin">
+                    <Authorized>
+
+                        <div class="size-mid">
+                            <a class="navbar-brand text-s" href="AdminDash/View">Dashboard</a>
+                        </div>
+                        <div class="size-mid">
+                            <a class="navbar-brand text-s" href="DayPlanAdd">Workout Plan </a>
+                        </div>
+                        <div class="size-mid">
+                            <a class="navbar-brand text-s" href="Admin/View/Diet">Diet Plan</a>
+                        </div>
+                        <div class="size-mid">
+                            <a class="navbar-brand text-s" href="auth">Relax Music</a>
+                        </div>
+                        <div class="size-mid">
+                            <a class="navbar-brand text-s" href="auth">speed songs</a>
+                        </div>
+                       
+                    </Authorized>
+                </AuthorizeView>
+                <AuthorizeView Roles="Administrators">
+                    <Authorized>
+
+                        <div class="size-mid">
+                            <a class="navbar-brand text-s" href="AdminDash/View">Dashboard</a>
+                        </div>
+                        <div class="size-mid">
+                            <a class="navbar-brand text-s" href="DayPlanAdd">Workout Plan</a>
+                        </div>
+                        <div class="size-mid">
+                            <a class="navbar-brand text-s" href="Admin/View/Diet">Diet Plan</a>
+                        </div>
+                        <div class="size-mid">
+                            <a class="navbar-brand text-s" href="auth">Relex music</a>
+                        </div>
+                        <div class="size-mid">
+                            <a class="navbar-brand text-s" href="auth">Speed Music</a>
+                        </div>
+                       
+                    </Authorized>
+                </AuthorizeView>
+                <AuthorizeView Roles="User">
+                    <Authorized>
+                    </Authorized>
+                </AuthorizeView>
+                <div class="size-mid">
+                    <a class="navbar-brand text-s" href="home" Match="NavLinkMatch.All">Home</a>
+                    <a class="navbar-brand text-s" href="User/View/About" Match="NavLinkMatch.All">About Us</a>
+                    <a class="navbar-brand text-s" href="User/View/Conatct" Match="NavLinkMatch.All">Contact Us</a>
+                    <a class="navbar-brand text-s" href="chat" Match="NavLinkMatch.All">Bot</a>
+                </div>
+            </div>
+        </div>
+        <div class="hidden-secm">
+            <AuthorizeView>
+                <Authorized>
+                    <div class=" nvAccountShow">
+                        <div class="account-column">
+                            <p class="emailAddress">@context.User.Identity?.Name</p>
+                            <a class="navbar-brand text-s editLink" style="font-size: 12px; margin-top: 4px;" href="Account/Manage">Account Settings</a>
+                        </div>
+                        <form action="Account/Logout" method="post">
+                            <AntiforgeryToken />
+                            <input type="hidden" name="ReturnUrl" value="@currentUrl" />
+                            <button type="submit" class="btn btn-primary">
+                                Logout
+                            </button>
+                        </form>
+                    </div>
+                </Authorized>
+                <NotAuthorized>
+                    <a class="navbar-brand text-s" href="Account/Login" Match="NavLinkMatch.All">Sign In</a>
+                    <a class="btn btn-success" href="Account/Register" role="button">Register</a>
+                </NotAuthorized>
+            </AuthorizeView>
+
+
+        </div>
+    </div>
+</div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler fixed-top" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="counter">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Workout
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="weather">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> About
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="auth">
+                <span class="bi bi-lock-nav-menu" aria-hidden="true"></span> Contact Us
+            </NavLink>
+        </div>
+
+        <AuthorizeView>
+            <Authorized>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="Account/Manage">
+                        <span class="bi bi-person-fill-nav-menu" aria-hidden="true"></span> @context.User.Identity?.Name
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <form action="Account/Logout" method="post">
+                        <AntiforgeryToken />
+                        <input type="hidden" name="ReturnUrl" value="@currentUrl" />
+                        <button type="submit" class="nav-link">
+                            <span class="bi bi-arrow-bar-left-nav-menu" aria-hidden="true"></span> Logout
+                        </button>
+                    </form>
+                </div>
+            </Authorized>
+            <NotAuthorized>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="Account/Register">
+                        <span class="bi bi-person-nav-menu" aria-hidden="true"></span> Register
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="Account/Login">
+                        <span class="bi bi-person-badge-nav-menu" aria-hidden="true"></span> Login
+                    </NavLink>
+                </div>
+            </NotAuthorized>
+        </AuthorizeView>
+    </nav>
+</div>
+
+@code {
+    private string? currentUrl;
+
+    protected override void OnInitialized()
+    {
+        currentUrl = NavigationManager.ToBaseRelativePath(NavigationManager.Uri);
+        NavigationManager.LocationChanged += OnLocationChanged;
+    }
+
+    private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        currentUrl = NavigationManager.ToBaseRelativePath(e.Location);
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        NavigationManager.LocationChanged -= OnLocationChanged;
+    }
+
+    private void RefreshPage()
+    {
+        NavigationManager.NavigateTo(NavigationManager.Uri, true);
+    }
+}
+

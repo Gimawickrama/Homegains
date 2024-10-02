@@ -1,0 +1,42 @@
+﻿@page "/User/BUTTW"
+@using homegains.Controllers.UserController
+@inject UserController UserController
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Policy = "UserOnly")]
+
+@UserController.workId
+
+<div class="container mt-5">
+    <div class="text-center">
+        <h1>Day </h1>
+        <p>Butt Workout</p>
+        <p>11 Mins, 7 Exercises</p>
+    </div>
+
+    @foreach (var list in UserController.Works)
+    {
+        <div class="exercise-card">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                    <video controls="controls" class="img-fluid">
+                        <source src="@list.animation" type="video/mp4" class="img-fluid" />
+                    </video>
+            </div>
+            <div class="col-9">
+                <h5 class="p-0 m-0">@list.title</h5>
+                <p class="p-0 m-0">@list.description</p>
+                <p>x @list.unique</p>
+            </div>
+        </div>
+    </div>
+    }
+
+    <div class="text-center mt-3">
+        <button class="btn btn-primary">Start</button>
+    </div>
+</div>
+
+@code {
+     
+} 

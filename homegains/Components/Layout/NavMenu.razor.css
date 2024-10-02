@@ -1,0 +1,177 @@
+.navbar-toggler {
+    appearance: none;
+    cursor: pointer;
+    width: 3.5rem;
+    height: 2.5rem;
+    color: transparent;
+    position: fixed;
+    top: 0.5rem;
+    left: 86%;
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") no-repeat center/1.75rem transparent;
+}
+
+.top-row {
+    height: 3.5rem;
+    background-color: rgb(243, 243, 243);
+    display: row;
+}
+
+.navbar-brand {
+    font-size: 1.1rem;
+}
+
+.bi {
+    display: inline-block;
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.75rem;
+    top: -1px;
+    background-size: cover;
+}
+
+.bi-house-door-fill-nav-menu {
+    background-image: url("Assets/svg/home.svg");
+}
+
+.bi-plus-square-fill-nav-menu {
+    background-image: url("");
+}
+
+.bi-list-nested-nav-menu {
+    background-image: url("");
+}
+
+.bi-list-round-signin-nav-menu {
+    background-image: url("Assets/svg/login-1.svg");
+}
+
+.bi-list-signup-nav-menu {
+    background-image: url("Assets/svg/arrow-circle-right.svg");
+}
+
+.nav-item {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item ::deep .nav-link {
+        color: rgba(0, 0, 0, 0.6);
+        background: none;
+        border: none;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+        width: 100%;
+    }
+
+    .nav-item ::deep a.active {
+        background-color: rgba(156, 199, 255, 0.37);
+        color: rgb(0, 0, 0);
+    }
+
+    .nav-item ::deep .nav-link:hover {
+        background-color: rgba(216, 233, 255, 0.37);
+        color: rgb(0, 0, 0);
+    }
+
+.nav-scrollable {
+    margin: 50px 0 0 0;
+    display: none;
+    visibility: visible;
+}
+
+.navbar-toggler:checked ~ .nav-scrollable {
+    display: block;
+}
+
+.hidden-sec {
+    display: none;
+    visibility: hidden;
+}
+
+.hidden-secm {
+    visibility: hidden;
+}
+
+@media (min-width: 895px) {
+    .navbar-toggler {
+        display: none;
+        visibility: hidden;
+    }
+
+    .hidden-sec {
+        display: none;
+        visibility: visible;
+    }
+
+    .hidden-secm {
+        visibility: visible;
+    }
+
+    .nav-scrollable {
+        /* Never collapse the sidebar for wide screens */
+        display: none;
+        visibility: hidden;
+        /* Allow sidebar to scroll for tall menus */
+        overflow-y: auto;
+        margin-top: 0px;
+    }
+}
+
+.row-fixed {
+    display: flex;
+}
+
+.text-s {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+}
+
+    .text-s:hover {
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    .text-s:active {
+        color: rgba(0, 0, 0, 1);
+    }
+
+.size-mid {
+    width: auto;
+    height: auto;
+    padding: 10px 0 0 0;
+}
+
+.btn {
+    font-size: 14px;
+}
+
+.nvAccountShow {
+    display: flex;
+}
+
+.account-column {
+    display: grid;
+    text-align: end;
+    margin-right: 8px;
+    justify-content: space-between;
+}
+
+.emailAddress {
+    margin-bottom: -7px;
+}
+
+.editLink {
+    padding: 0;
+    margin: 0 0 0 0;
+}

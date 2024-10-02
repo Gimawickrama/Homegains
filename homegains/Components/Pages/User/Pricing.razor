@@ -1,0 +1,144 @@
+﻿@page "/User/Pricing"
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Policy = "UserOnly")]
+
+<div class="container py-4 py-xl-5">
+    <div class="row mb-5">
+        <div class="col-md-8 col-xl-6 text-center mx-auto">
+            <h2>Pricing</h2>
+            <p class="w-lg-50">Everything You Need To Capture Leads And Turn Them Into Customer.</p>
+        </div>
+    </div>
+    <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3 d-xl-flex">
+        <div class="col">
+            <div class="card mb-4">
+                <div class="card-body text-center p-4">
+                    <h4 class="fw-bold card-subtitle">Rs0</h4>
+                    <h4 class="display-5 fw-bold card-title">Free</h4>
+                    <p>.</p><a class="btn btn-light d-block w-100" role="button" href="Payment">Here</a>
+                </div>
+            </div>
+            <div class="bg-light border rounded border-light p-4">
+                <ul class="list-unstyled">
+                    <li class="d-flex mb-2">
+                        <span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                            </svg>
+                        </span><span> Leg Workout 2 Days .</span>
+                    </li>
+                    <li class="d-flex mb-2">
+                        <span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                            </svg>
+                        </span><span>Butt WorkOut 2 Days.</span>
+                    </li>
+                    <li class="d-flex mb-2">
+                        <span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                            </svg>
+                        </span><span>Diet Plan 1 Day.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-primary border-2 mb-4">
+                <div class="card-body text-center p-4">
+                    <span class="badge rounded-pill bg-primary position-absolute top-0 start-50 translate-middle text-uppercase">Most Popular</span>
+                    <h4 class="fw-bold card-subtitle">Pro</h4>
+                    <h4 class="display-5 fw-bold card-title">4000lkr<span class="fs-4 fw-normal text-muted">/mo</span></h4>
+                    <p>Buy Now.</p><a class="btn btn-primary d-block w-100" role="button" href="Payment">Here</a>
+                </div>
+            </div>
+            <div class="bg-light border rounded border-light p-4">
+                <ul class="list-unstyled">
+                    <li class="d-flex mb-2">
+                        <span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                            </svg>
+                        </span><span>Leg WorkOut 30 Days.</span>
+                    </li>
+                    <li class="d-flex mb-2">
+                        <span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                            </svg>
+                        </span><span> Butt WOrkout 30 Days.</span>
+                    </li>
+                    <li class="d-flex mb-2">
+                        <span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                            </svg>
+                        </span><span>Full Body Workout 5 Days.</span>
+                    </li>
+                    <li class="d-flex mb-2">
+                        <span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                            </svg>
+                        </span><span>Diet Plan 20 Days.</span>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4">
+                <div class="card-body text-center p-4">
+                    <h4 class="fw-bold card-subtitle">Enterprise</h4>
+                    <h4 class="display-5 fw-bold card-title">6000lkr<span class="fs-4 fw-normal text-muted">/mo</span></h4>
+                    <p>Buy Now!</p><a class="btn btn-dark d-block w-100" role="button" href="Payment">Here</a>
+                </div>
+            </div>
+            <div class="bg-light border rounded border-light p-4">
+                <ul class="list-unstyled">
+                    <li class="d-flex mb-2">
+                        <span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                            </svg>
+                        </span><span>Full Body Workout 30 Days</span>
+                    </li>
+                    <li class="d-flex mb-2">
+                        <span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                            </svg>
+                        </span><span>Leg  Workout 30 Days.</span>
+                    </li>
+                    <li class="d-flex mb-2">
+                        <span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                            </svg>
+                        </span><span>Butt & ABS workouts 30 days</span>
+                    </li>
+                    <li class="d-flex mb-2">
+                        <span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                            </svg>
+                        </span><span>You can see zumba video and listening relax songs .</span>
+                    </li>
+                    <li class="d-flex mb-2">
+                        <span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                            </svg>
+                        </span><span>Focus Diet Plan </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+@code {
+
+}

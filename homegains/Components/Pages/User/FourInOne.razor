@@ -1,0 +1,104 @@
+﻿@page "/User/FourInOne"
+@using homegains.Controllers.UserController
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
+@inject UserController UserController
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Policy = "UserOnly")]
+
+<style>
+    .background-image {
+        background: url(image/water.jpg);
+        background-size: cover;
+        width: 100%;
+        min-height: 100vh;
+    }
+    .card-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        margin: 10px;
+        width: 250px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        font-size: 16px;
+        color: #666;
+    }
+
+</style>
+
+<div class="container background-image">
+    <h1 class="text-center mb-4">Workout Plan</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"> FullBody Workout</h5>
+                        <p class="card-text">A full body calisthenics workout that works abdominal muscles, chest, arms, legs, and several parts of the back!</p>
+                        <button class="btn btn-outline-primary w-100" @onclick="(() => UserController.changeWorkId(0))">View</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">buttocks Workout</h5>
+                        <p class="card-text">The gluteal muscles are a group of muscles that make up the buttock area!</p>
+                        <button class="btn btn-outline-primary w-100" @onclick="(() => UserController.changeWorkId(1))">View</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">ABS Workout</h5>
+                        <p class="card-text">Lie down on your back with your knees bent, feet as wide as your hips and feet flat on the floor!</p>
+                        <button class="btn btn-outline-primary w-100" @onclick="(() => UserController.changeWorkId(2))">View</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Leg Workout</h5>
+                        <p class="card-text">Giving your legs attention will pay off every day.!</p>
+                        <button class="btn btn-outline-primary w-100" @onclick="(() => UserController.changeWorkId(3))">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@if (UserController.daysShows)
+{
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+            @foreach(var she in UserController.Shedules)
+                {
+                    <homegains.Components.Pages.User.catogary.Components.ShowVideos x="@she.days" id="@she.ID"></homegains.Components.Pages.User.catogary.Components.ShowVideos>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <button class="btn btn-outline-dark" style="width:120px;" @onclick="@UserController.dayShowFale">Back</button>
+    </div>
+}
+
+
+
+@code {
+            }

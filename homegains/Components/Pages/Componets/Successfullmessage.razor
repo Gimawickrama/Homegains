@@ -1,0 +1,16 @@
+﻿@using homegains.Controllers.AdminController
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
+@inject AddPlan AddPlan
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Policy = "AdminOnly")]
+
+<h3>Successfull</h3>
+<div class="mt-1" >
+    <button class="btn btn-success " @onclick="@AddPlan.SuccessFullMessage">
+         Success
+    </button>
+</div>/
+
+@code {
+
+}

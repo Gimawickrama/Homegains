@@ -1,0 +1,43 @@
+@keyframes fadeIn-b-19oal92pjr {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate__animated[b-19oal92pjr] {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate__fadeIn[b-19oal92pjr] {
+    animation-name: fadeIn-b-19oal92pjr;
+}
+
+.animate__fadeInDown[b-19oal92pjr] {
+    animation-name: fadeInDown;
+}
+
+.animate__fadeInUp[b-19oal92pjr] {
+    animation-name: fadeInUp;
+}
+
+.animate__fadeInLeft[b-19oal92pjr] {
+    animation-name: fadeInLeft;
+}
+
+.animate__fadeInRight[b-19oal92pjr] {
+    animation-name: fadeInRight;
+}
+
+.jumbotron[b-19oal92pjr] {
+    background-color: null; /* Light background color with slight opacity */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    
+}

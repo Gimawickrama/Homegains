@@ -1,0 +1,72 @@
+﻿@page "/User/ABSW"
+@using homegains.Controllers.FullBodyController
+@inject FullBodyController FullBodyController
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Policy = "UserOnly")]
+
+@FullBodyController.id
+
+<div class="container mt-5">
+    <div class="text-center">
+        <h1>Day </h1>
+        <p>Full Body Workout</p>
+        <p>11 Mins, 7 Exercises</p>
+    </div>
+
+    <div class="exercise-card">
+        <div class="row align-items-center">
+            <div class="col-3">
+                <img src="path/to/standing-bicycle-crunches.gif" alt="Standing Bicycle Crunches">
+            </div>
+            <div class="col-9">
+                <h5>Standing Bicycle Crunches</h5>
+                <p>x20</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise-card">
+        <div class="row align-items-center">
+            <div class="col-3">
+                <img src="path/to/wall-push-ups.gif" alt="Wall Push-Ups">
+            </div>
+            <div class="col-9">
+                <h5>Wall Push-Ups</h5>
+                <p>x22</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise-card">
+        <div class="row align-items-center">
+            <div class="col-3">
+                <img src="videos/20,599%20woman%20doing%20exercise%20animations%20-%20free%20in%20lottie%20json,%20gif,%20static%20svg_3.mp4" alt="Clapping Crunches">
+            </div>
+            <div class="col-9">
+                <h5>Clapping Crunches</h5>
+                <p>x20</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise-card">
+        <div class="row align-items-center">
+            <div class="col-3">
+                <img src="path/to/fire-hydrant-left.gif" alt="Fire Hydrant Left">
+            </div>
+            <div class="col-9">
+                <h5>Fire Hydrant Left</h5>
+                <p>x20</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-3">
+        <button class="btn btn-primary">Start</button>
+    </div>
+</div>
+
+@code {
+
+}

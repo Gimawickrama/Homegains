@@ -1,0 +1,26 @@
+﻿@using homegains.Controllers.UserController
+@inject UserController UserController
+@rendermode InteractiveServer
+
+<div class="card">
+    <div class="card-body text-center d-flex justify-content-between">
+        <div class="h-100">
+            <h5 class="card-title">Day @x</h5>
+            <p class="card-text"><strong>Date:</strong> January @x, 2024</p>
+        </div>
+        <div>
+            <button class="btn btn-primary btn-block h-100" @onclick="(() => UserController.passData(x, id))">View Details</button>
+        </div>
+    </div>
+</div>
+
+
+
+@code {
+    [Parameter]
+    public int x { get; set; }
+
+    [Parameter]
+    public int id { get; set; }
+
+}

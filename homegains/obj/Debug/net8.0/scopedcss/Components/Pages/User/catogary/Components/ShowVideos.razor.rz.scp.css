@@ -1,0 +1,29 @@
+.card[b-u48jplg205] {
+    transition: transform 0.3s;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    .card:hover[b-u48jplg205] {
+        transform: scale(1.02);
+    }
+
+.card-body[b-u48jplg205] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title[b-u48jplg205] {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text[b-u48jplg205] {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.btn[b-u48jplg205] {
+    margin-top: auto;
+}

@@ -1,0 +1,214 @@
+﻿@page "/chat"
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card mt-5">
+                <div class="card-header">
+                    <h4>Chatbot</h4>
+                </div>
+                <div class="card-body">
+                    <div class="chat-box" style="height: 400px; overflow-y: scroll;">
+                        @foreach (var message in messages)
+                        {
+                            <div class="message">
+                                <strong>@(message.IsUser ? "You" : "Bot"): </strong>@message.messag
+                            </div>
+
+                            <div class="message @(message.IsUser ? "user-message" : "bot-message")">
+                                <strong>@(message.IsUser ? "You" : "Bot"): </strong>@message.Text
+                            </div>
+                        }
+                    </div>
+                    <div class="input-group mt-3">
+                        <input @bind="userMessage" @bind:event="oninput" type="text" class="form-control" placeholder="Type your message..." />
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" @onclick="SendMessage">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string userMessage;
+    private List<ChatMessage> messages = new List<ChatMessage>();
+
+    private async Task SendMessage()
+    {
+        if (userMessage == "hi")
+        {
+            messages.Add(new ChatMessage {
+                messag = userMessage,
+                    IsUser = true,
+                    Text ="how can i help you",
+
+        });
+        }
+        else if (userMessage == "how do i start a workout routine")
+        {
+            messages.Add(new ChatMessage
+                {
+                    messag = userMessage,
+                    IsUser = true,
+                    Text = "Consult a fitness trainer, start with a warm-up, choose exercises that target different muscle groups, start with light weights and increase gradually, and ensure you have rest days.",
+
+                });
+        }
+        else if (userMessage == "what is your name")
+        {
+            messages.Add(new ChatMessage
+                {
+                    messag = userMessage,
+                    IsUser = true,
+                    Text = "Alex girl",
+
+                });
+        }
+        else if (userMessage == "can i buy the equipment")
+        {
+            messages.Add(new ChatMessage
+                {
+                    messag = userMessage,
+                    IsUser = true,
+                    Text = "wait i am searching",
+
+                });
+        }
+        else if (userMessage == "ok")
+        {
+            messages.Add(new ChatMessage
+                {
+                    messag = userMessage,
+                    IsUser = true,
+                    Text = "i'm very Sorry , i Can't find it. You can call 0778217949 And ask it.",
+
+                });
+        }
+        else if (userMessage == "i think your so good")
+        {
+            messages.Add(new ChatMessage
+                {
+                    messag = userMessage,
+                    IsUser = true,
+                    Text = "thank you",
+
+                });
+        }
+        else if (userMessage == "what are the gym operating hours?")
+        {
+            messages.Add(new ChatMessage
+                {
+                    messag = userMessage,
+                    IsUser = true,
+                    Text = "The gym is open from 6 AM to 10 PM on weekdays and 8 AM to 8 PM on weekends",
+
+                });
+        }
+        else if (userMessage == "what is the membership fee?")
+        {
+            messages.Add(new ChatMessage
+                {
+                    messag = userMessage,
+                    IsUser = true,
+                    Text = "The membership fee varies based on the plan. We have  daily ,monthly Plan . Please check with our membership desk for the latest rates.",
+
+                });
+        }
+        else if (userMessage == "what should I do after a workout?")
+        {
+            messages.Add(new ChatMessage
+                {
+                    messag = userMessage,
+                    IsUser = true,
+                    Text = "After a workout, cool down with light stretching, rehydrate with water, and refuel with a meal or snack rich in protein and carbohydrates within 2 hours.",
+
+                });
+        }
+        else if (userMessage == "how can I lose weight")
+        {
+            messages.Add(new ChatMessage
+                {
+                    messag = userMessage,
+                    IsUser = true,
+                    Text = "Weight loss involves a combination of regular exercise and a healthy diet. Aim for a caloric deficit by consuming fewer calories than you burn. Include both cardio and strength training in your routine.",
+
+                });
+        }
+        else if (userMessage == "how can I pay for my membership")
+        {
+            messages.Add(new ChatMessage
+                {
+                    messag = userMessage,
+                    IsUser = true,
+                    Text = "Membership fees can be paid via credit card, debit card, or bank transfer. We also accept cash payments at the front desk.",
+
+                });
+        }
+        else if (userMessage == "do you offer diet plans")
+        {
+            messages.Add(new ChatMessage
+                {
+                    messag = userMessage,
+                    IsUser = true,
+                    Text = "Yes, our certified nutritionist can create personalized diet plans for members. Schedule an appointment at the front desk..",
+
+                });
+        }
+        else if (userMessage == "what should I bring to the gym")
+        {
+            messages.Add(new ChatMessage
+                {
+                    messag = userMessage,
+                    IsUser = true,
+                    Text = "Bring a water bottle, towel, workout clothes, appropriate footwear, and any personal items you may need.",
+
+                });
+        }
+        else if (userMessage == "what are the best exercises for abs")
+        {
+            messages.Add(new ChatMessage
+                {
+                    messag = userMessage,
+                    IsUser = true,
+                    Text = "Effective ab exercises include planks, crunches, bicycle crunches, leg raises, and Russian twists. Combine these with a balanced diet and overall body workout for best results.",
+
+                });
+        }
+        else if (userMessage == "what should I eat before a workout")
+        {
+            messages.Add(new ChatMessage
+                {
+                    messag = userMessage,
+                    IsUser = true,
+                    Text = "Eat a balanced meal with carbohydrates, protein, and some fat 2-3 hours before a workout. For a quick snack, try a banana with peanut butter or a protein shake 30-60 minutes prior.",
+
+                });
+        }
+
+        /*if (!string.IsNullOrWhiteSpace(userMessage))
+            {
+            messages.Add(new ChatMessage { IsUser = true, Text = userMessage });
+            var botResponse = await GetBotResponse(userMessage);
+            messages.Add(new ChatMessage { IsUser = false, Text = botResponse });
+            userMessage = string.Empty;
+        }*/
+    }
+
+    private Task<string> GetBotResponse(string userMessage)
+    {
+        // This is a placeholder. Replace with actual bot logic or API call.
+        return Task.FromResult("This is a response from the bot.");
+    }
+
+    public class ChatMessage
+    {
+        public string messag { get; set; }
+
+        public bool IsUser { get; set; }
+        public string Text { get; set; }
+    }
+}

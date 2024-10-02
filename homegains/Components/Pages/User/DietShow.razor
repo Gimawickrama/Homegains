@@ -1,0 +1,49 @@
+﻿@page "/User/View/Diet"
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Policy = "UserOnly")]
+
+<div class="container my-5">
+    <h1 class="text-center mb-4">Diet Plan</h1>
+
+    <!-- Diet Plan List -->
+    <h2 class="text-center my-4">Diet Plan List</h2>
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1"> Diet Plan 1</h5>
+                <small>Breakfast</small>
+                <h6>1 cup of tea or coffee without suger and milk </h6>
+            </div>
+            <p class="mb-1">Oatmeal, Fruits, and a glass of Milk</p>
+            <small>7:00 AM</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Diet Plan 2</h5>
+                <small>Lunch</small>
+            </div>
+            <p class="mb-1">Grilled Chicken, Quinoa, and Steamed Vegetables</p>
+            <small>12:30 PM</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Diet Plan 3</h5>
+                <small>Dinner</small>
+            </div>
+            <p class="mb-1">Salmon, Brown Rice, and a side Salad</p>
+            <small>7:00 PM</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Diet Plan 4</h5>
+                <small>Snack</small>
+            </div>
+            <p class="mb-1">Greek Yogurt and Berries</p>
+            <small>4:00 PM</small>
+        </a>
+    </div>
+</div>
+
+@code {
+
+}

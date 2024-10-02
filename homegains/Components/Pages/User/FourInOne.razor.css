@@ -1,0 +1,99 @@
+﻿
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Card Group Styling */
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Card Styling */
+.card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 250px;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+/* Card Body Styling */
+.card-body {
+    padding: 20px;
+}
+
+/* Card Title Styling */
+.card-title {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Card Text Styling */
+.card-text {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .btn-outline-primary:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+/* Additional Button Styling */
+.btn-outline-dark {
+    border-color: #343a40;
+    color: #343a40;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .btn-outline-dark:hover {
+        background-color: #343a40;
+        color: #fff;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+/* Center the 'Back' button */
+.d-flex.justify-content-center {
+    margin-top: 20px;
+}

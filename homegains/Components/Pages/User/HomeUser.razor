@@ -1,0 +1,115 @@
+﻿@page "/home"
+@using homegains.Controllers.AdminController
+@inject AddPlan AddPlan
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
+
+
+<div class="container-fluid">
+	<div class="d-flex justify-content-center align-self-center align-items-center" style="background:url(assets/other/methodical-weight-training-builds-muscular-healthy-men-generated-by-ai.jpg); background-position:center;background-repeat:no-repeat;background-size:cover; height:550px; border-radius:10px;">
+		<div class="p-3 ">
+			<div class="text-center" style="max-width:700px;">
+				<h1 class="p-0 m-0 text-white">Welcome to the HomeGains Workout Service Center</h1>
+				<p class="p-0 m-0 form-text text-white">Welcome to the esteemed HomeGains Workout Service Center. We are honored to have you grace us with your presence as our esteemed guest. How may we be of service to you on this fine day? Please do not hesitate to inform us of your needs and we shall attend to them promptly. Your satisfaction is our utmost priority. Thank you for choosing HomeGains Workout Service Center.</p>
+				<a class="btn btn-primary mt-3" href="User/BMI" role="button">BMI Calculate</a>
+			</div>
+		</div>	
+	</div>
+
+	<div class="mt-5 mb-5 d-flex justify-content-center">
+		<div class="text-center w-75">
+			<h1 class="p-0 m-0">Best Our Programmes</h1>
+			<p class="p-0 m-0 form-text">A workout is a period of physical exercise or training. Give your upper body a workout by using handweights. ... a 35-minute aerobic workout.</p>
+			<button class="btn btn-outline-success mt-2 rounded" @onclick="@AddPlan.NavigatePrice">Join Now</button>
+		</div>
+	</div>
+
+	<div class="mt-5">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="p-3">
+					<div class="d-flex justify-content-center">
+						<a href="User/View/Yoga">
+						<img src="assets/sporticons/fit-yoga.svg" alt="Alternate Text" class="img-fluid" width="100" />
+						</a>
+					</div>
+					<div class="text-center mt-2">
+						<h4 class="p-0 m-0">Yoga Programs</h4>
+						<p class="p-0 m-0 form-text">Yoga is a practice that connects the body, breath, and mind. It uses physical postures, breathing exercises, and meditation to improve overall health. Yoga was developed as a spiritual practice thousands of years ago.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="p-3">
+					<div class="d-flex justify-content-center">
+						<a href="User/FourInOne">
+						<img src="assets/sporticons/fit-cycling.svg" alt="Alternate Text" class="img-fluid" width="100" />
+						</a>
+					</div>
+					<div class="text-center mt-2">
+						<h4 class="p-0 m-0">Workout Programs</h4>
+						<p class="p-0 m-0 form-text">A practice or exercise to test or improve one's fitness for athletic competition, ability, or performance.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="p-3">
+					<div class="d-flex justify-content-center">
+						<a href="User/View/Diet">
+						<img src="assets/sporticons/fit-massage.svg" alt="Alternate Text" class="img-fluid" width="100" />
+						</a>
+					</div>
+					<div class="text-center mt-2">
+						<h4 class="p-0 m-0">Diet Programs</h4>
+						<p class="p-0 m-0 form-text">A set of scheduled meals in order to achieve different metabolic and health goals, such as weight loss, sugar control, muscle gain.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="p-3">
+					<div class="d-flex justify-content-center">
+						<a href="User/View/Zumba">
+						<img src="assets/sporticons/fit-swimming.svg" alt="Alternate Text" class="img-fluid" width="100" />
+						</a>
+					</div>
+					<div class="text-center mt-2">
+						<h4 class="p-0 m-0">Zumba Programs</h4>
+						<p class="p-0 m-0 form-text">Zumba is a fun and energetic workout that combines Latin and international music with dance steps to create a workout that’s as enjoyable as it is effective.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="text-center py-5">
+		<h1 class="p-0 m-0">Find Your Worthy Health</h1>
+		<p class="p-0 m-0 form-text">Let's kickstart your wellness journey and make self-care a priority - because you deserve to feel your best every day.</p>
+	</div>
+
+	<div class="d-flex justify-content-center">
+		<hr class="w-50" style="border:3px solid grey; border-radius:50px;"/>
+	</div>
+
+	<div class="py-5"></div>
+
+	<div class="d-flex justify-content-center align-self-center align-items-center mt-2" style="background:url(assets/other/close-up-man-doing-yoga-indoors.jpg); background-position:center;background-repeat:no-repeat;background-size:cover; height:550px; border-radius:10px;">
+		<div class="p-3 ">
+			<div class="text-center" style="max-width:700px;">
+				<h1 class="p-0 m-0 text-white">Benefits you get while doing the workout</h1>
+				<p class="p-0 m-0 form-text text-white">Welcome to the esteemed HomeGains Workout Service Center. We are honored to have you grace us with your presence as our esteemed guest. How may we be of service to you on this fine day? Please do not hesitate to inform us of your needs and we shall attend to them promptly. Your satisfaction is our utmost priority. Thank you for choosing HomeGains Workout Service Center.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="d-flex justify-content-center my-5">
+		<div class="mt-3 text-center w-75">
+			<h1 class="p-0 m-0 ">Thanks For joining Us</h1>
+			<p class="p-0 m-0 form-text">Hey, great to have you on board and checking out our website! Hope you find what you're looking for and have a good time browsing around. Feel free to reach out if you need any help or have any questions. Enjoy your stay with us!</p>
+		</div>
+	</div>
+
+	
+</div>
+
+@code {
+
+}
